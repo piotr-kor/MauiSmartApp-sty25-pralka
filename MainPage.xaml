@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiSmartApp_sty25_pralka.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="#D7E8B5">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="10"
+            Spacing="10"
+            BackgroundColor="#D7E8B5">
+
+            <!-- Wiersz 1: nagłówek -->
+            <Label
+                Text="SmartAPP"
+                FontSize="32"
+                FontAttributes="Bold"
+                TextColor="#254D25"
+                HorizontalTextAlignment="Center"
+                HorizontalOptions="Center"
+                Margin="0,10,0,0" />
+            <Label
+                Text="INF.04-02-25.01-SG"
+                TextColor="#254D25"
+                HorizontalTextAlignment="Center"
+                HorizontalOptions="Center"
+                Margin="0,0,0,0" />
+      
+            <!-- Wiersz 2: obraz i przycisk 1 -->
+            <HorizontalStackLayout
+                Spacing="10"
+                HorizontalOptions="Center"
+                VerticalOptions="Center">
+
+                <Image
+                    Source="dotnet_bot.png"
+                    HeightRequest="150"
+                    Aspect="AspectFit"
+                    Margin="20,10,20,20" />
+
+                <Button
+                    x:Name="CounterButton1"
+                    Text="Licznik 1: 0"
+                    Clicked="OnCounter1Clicked"
+                    BackgroundColor="#A8C995"
+                    TextColor="#183A18"
+                    HeightRequest="44"
+                    Margin="10" />
+            </HorizontalStackLayout>
+
+            <!-- Wiersz 3: obraz i przycisk 2 -->
+            <HorizontalStackLayout
+                Spacing="10"
+                HorizontalOptions="Center"
+                VerticalOptions="Center">
+
+                <Image
+                    Source="dotnet_bot.png"
+                    HeightRequest="150"
+                    WidthRequest="150"
+                    Aspect="AspectFit"
+                    Margin="20,10,20,20" />
+
+                <Button
+                    x:Name="CounterButton2"
+                    Text="Licznik 2: 0"
+                    Clicked="OnCounter2Clicked"
+                    BackgroundColor="#A8C995"
+                    TextColor="#183A18"
+                    Margin="10"
+                    VerticalOptions="Center" />
+            </HorizontalStackLayout>
+
+            <!-- Wiersz 4: obraz i przycisk 3 -->
+            <HorizontalStackLayout
+                Spacing="10"
+                HorizontalOptions="Center"
+                VerticalOptions="Center">
+
+                <Image
+                    Source="dotnet_bot2.png"
+                    HeightRequest="150"
+                    WidthRequest="150"
+                    Aspect="AspectFit"
+                    Margin="20,10,20,20" />
+
+                <Button
+                    x:Name="CounterButton3"
+                    Text="Licznik 3: 0"
+                    Clicked="OnCounter3Clicked"
+                    BackgroundColor="#A8C995"
+                    TextColor="#183A18"
+                    Margin="10"
+                    VerticalOptions="Center" />
+            </HorizontalStackLayout>
+
+            <!-- Wiersz 5: pole edycyjne -->
+            <Entry
+                x:Name="UserEntry"
+                Placeholder="Wpisz tekst i opuść pole..."
+                BackgroundColor="#FFF6CC"
+                TextColor="#008000"
+                PlaceholderColor="#008000"
+                Margin="10"
+                Unfocused="OnEntryUnfocused" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
